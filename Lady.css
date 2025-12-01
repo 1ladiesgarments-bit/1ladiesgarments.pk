@@ -1,0 +1,66 @@
+:root{
+  --primary:#d4006c;
+  --text:#222;
+  --soft:#f9f9f9;
+}
+*{box-sizing:border-box;margin:0;padding:0;font-family:Arial, sans-serif}
+
+body{background:#fff;color:var(--text)}
+
+.header{text-align:center;padding:40px 20px;background:linear-gradient(120deg,#ffe3f1,#fff)}
+.header h1{font-size:2.2rem;color:var(--primary);}
+
+.navbar{
+  display:flex;
+  justify-content:center;
+  gap:18px;
+  padding:15px;
+  background:var(--soft);
+}
+.navbar a{
+  text-decoration:none;
+  color:var(--text);
+  font-size:1rem;
+}
+.navbar .whatsapp{
+  color:#fff;
+  background:#25D366;
+  padding:6px 12px;
+  border-radius:6px;
+}
+
+.container{max-width:1000px;margin:0 auto;padding:30px;}
+.container h2{text-align:center;margin-bottom:25px;color:var(--primary);}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:#fff;
+  padding:15px;
+  border:1px solid #eee;
+  border-radius:10px;
+  text-align:center;
+  transition:.3s;
+}
+.card:hover{transform:translateY(-5px);box-shadow:0 6px 16px rgba(0,0,0,.1);}
+.card img{width:100%;border-radius:10px;}
+.card h3{margin:12px 0;font-size:1.1rem;}
+.price{font-weight:bold;margin-bottom:10px;}
+
+.btn{
+  width:100%;
+  padding:10px;
+  border:0;
+  cursor:pointer;
+  border-radius:6px;
+  background:var(--primary);
+  color:#fff;
+  transition:.3s;
+}
+.btn:hover{opacity:0.8;}
+
+footer{text-align:center;padding:25px;background:var(--soft);margin-top:40px;}
